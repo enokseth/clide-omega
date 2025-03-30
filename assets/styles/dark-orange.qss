@@ -1,0 +1,187 @@
+/**
+ * @file dark-orange.qss
+ * @description 
+ * @author 
+ * @copyright 
+ */
+
+/**
+ * @file dark.qss
+ * @description Dark theme for CLIDE application
+ */
+
+/* Global Styles */
+QWidget {
+    background-color: #1e1e1e; /* Dark background */
+    color: #dcdcdc; /* Light text */
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+
+
+}
+QPushButton {
+    background-color: #3a3a3a; /* Dark grey */
+    color: #ffffff; /* White text */
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #505050;
+    border: solid #777777;
+}
+
+QPushButton:pressed {
+    background-color: #2e2e2e;
+    border: 1px solid #999999;
+}
+
+QLabel {
+    font-size: 14px;
+    padding: 6px;
+}
+
+QLabel#device_info_label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QLabel#scrcpy_container {
+    font-size: 16px;
+    background-color: #263238; /* Dark background for the container */
+    color: #dcedc8; /* Light text */
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+}
+
+QLineEdit {
+    background-color: #2a2a2a;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+QLineEdit:focus {
+    border: 1px solid #ff9800;
+}
+
+QTreeWidget {
+    background-color: #2a2a2a;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QTreeWidget::item {
+    padding: 6px;
+}
+
+QTreeWidget::item:hover {
+    background-color: #3a3a3a;
+}
+
+QTreeWidget::item:selected {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+QProgressBar {
+    border: 1px solid #555555;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QProgressBar::chunk {
+    background-color: #ff9800;
+    width: 20px;
+}
+
+QScrollBar:vertical {
+    background: #2a2a2a;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+    border: none;
+}
+
+QScrollBar::handle:vertical {
+    background: #ff9800;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+QMenuBar {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 4px 12px;
+    margin: 1px;
+}
+
+QMenuBar::item:selected {
+    background: #ff9800;
+    color: #ffffff;
+}
+
+QMenu {
+    background-color: #2a2a2a;
+    color: #dcdcdc;
+    border: 1px solid #555555;
+}
+
+QMenu::item:selected {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #555555;
+    margin: 5px 0;
+}
+
+QMessageBox {
+    background-color: #2a2a2a;
+    color: #dcdcdc;
+}
+
+QMessageBox QLabel {
+    font-size: 14px;
+}
+
+QMessageBox QPushButton {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 5px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #505050;
+    border: 1px solid #777777;
+}
+
+QMessageBox QPushButton:pressed {
+    background-color: #2e2e2e;
+    border: 1px solid #999999;
+}
+
+#status_label {
+    font-size: 12px;
+    font-style: italic;
+    color: #ff9800; /* Orange for status */
+    margin-top: 10px;
+}

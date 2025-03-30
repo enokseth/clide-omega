@@ -1,0 +1,196 @@
+/**
+ * @file styles.qss
+ * @description Modern and sleek QSS stylesheet for CLIDE application
+ */
+
+/* Styles pour le bouton de fermeture scrcpy */
+QPushButton#stop_scrcpy_button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+QPushButton#stop_scrcpy_button:hover {
+    background-color: #b71c1c;
+}
+QPushButton#stop_scrcpy_button:pressed {
+    background-color: #880e4f;
+}
+
+/* Global Styles */
+QWidget {
+    background-color: #1e1e1e; /* Dark background */
+    color: #dcdcdc; /* Light text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+QPushButton {
+    background-color: #3a3a3a; /* Dark grey */
+    color: #ffffff; /* White text */
+    border: 1px solid #555555;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #505050;
+    border: 1px solid #777777;
+}
+
+QPushButton:pressed {
+    background-color: #2e2e2e;
+    border: 1px solid #999999;
+}
+
+QLabel {
+    font-size: 14px;
+    padding: 5px;
+}
+
+QLabel#device_info_label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QLabel#scrcpy_container {
+    font-size: 16px;
+    background-color: #263238; /* Dark background for the container */
+    color: #dcedc8; /* Light text */
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+QLineEdit {
+    background-color: #2a2a2a;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+QLineEdit:focus {
+    border: 1px solid #ff9800;
+}
+
+QTreeWidget {
+    background-color: #2a2a2a;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+QTreeWidget::item {
+    padding: 5px;
+}
+
+QTreeWidget::item:hover {
+    background-color: #3a3a3a;
+}
+
+QTreeWidget::item:selected {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+QProgressBar {
+    border: 1px solid #555555;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QProgressBar::chunk {
+    background-color: #ff9800;
+    width: 20px;
+}
+
+QScrollBar:vertical {
+    background: #2a2a2a;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+    border: none;
+}
+
+QScrollBar::handle:vertical {
+    background: #ff9800;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+QMenuBar {
+    background-color: #2a2a2a;
+    padding:3px;
+    padding: 2px 4px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 4px 12px;
+    margin: 1px;
+}
+
+QMenuBar::item:selected {
+    background: #ff9800;
+    color: #ffffff;
+}
+
+QMenu {
+    background-color: #2a2a2a;
+    color: #dcdcdc;
+    border: 1px solid #555555;
+}
+
+QMenu::item:selected {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #555555;
+    margin: 5px 0;
+}
+
+QMessageBox {
+    background-color: #2a2a2a;
+    color: #dcdcdc;
+}
+
+QMessageBox QLabel {
+    font-size: 14px;
+}
+
+QMessageBox QPushButton {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 5px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #505050;
+    border: 1px solid #777777;
+}
+
+QMessageBox QPushButton:pressed {
+    background-color: #2e2e2e;
+    border: 1px solid #999999;
+}
+
+#status_label {
+    font-size: 12px;
+    font-style: italic;
+    color: #ff9800; /* Orange for status */
+    margin-top: 10px;
+}

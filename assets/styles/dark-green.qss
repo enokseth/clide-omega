@@ -1,0 +1,121 @@
+/**
+ * @file styles.css
+ * @description 
+ * @author 
+ * @copyright 
+ */
+
+/* Thème Vert - Style global */
+QPushButton {
+    background-color: #2e7d32; /* Vert foncé */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+QPushButton:hover {
+    background-color: #388e3c; /* Vert plus clair au survol */
+    border: 2px solid #4caf50; 
+}
+
+QPushButton:pressed {
+    background-color: #1b5e20; /* Vert plus sombre lorsqu'appuyé */
+    border: 2px solid #2e7d32;
+}
+
+QLabel {
+    font-size: 14px;
+    color: #dcedc8; /* Texte clair sur fond sombre */
+    padding: 5px;
+}
+
+QLabel#device_info_label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QLabel#scrcpy_container {
+    font-size: 16px;
+    background-color: #263238; /* Fond sombre pour le container */
+    color: #dcedc8; /* Texte clair */
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+QLineEdit {
+    border: 2px solid #2e7d32;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border-color: #388e3c;
+}
+
+QTreeWidget {
+    border: 2px solid #2e7d32;
+    border-radius: 5px;
+    background-color: #37474f; /* Fond plus sombre pour la liste */
+    font-size: 13px;
+    padding: 5px;
+}
+
+QTreeWidget::item {
+    padding: 8px;
+}
+
+QTreeWidget::item:hover {
+    background-color: #2c6b44;
+}
+
+QTreeWidget::item:selected {
+    background-color: #3b8e4d;
+    color: white;
+}
+
+QProgressBar {
+    border: 2px solid #2e7d32;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+QProgressBar::chunk {
+    background-color: #388e3c;
+    width: 20px;
+}
+
+QScrollBar:vertical {
+    border: 2px solid #2e7d32;
+    border-radius: 5px;
+    background: #263238;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #388e3c;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+QWidget {
+    background-color: #263238;
+}
+
+QLabel#status_label {
+    font-size: 12px;
+    font-style: italic;
+    color: #b0bec5;
+    margin-top: 10px;
+}
